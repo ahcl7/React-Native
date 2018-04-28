@@ -1,0 +1,12 @@
+const md = require('./helper1.js');
+var A = {x: 0 , y: 0};
+var B = {x: 5 , y: 0};
+var C = {x: 5, y:2};
+var D = {x: 0, y:2};
+var O = {x: 0, y: 0};
+var dir = {x:1, y : 1};
+var p = [A,B,C,D];
+var tt =[];
+var to = [];
+var ok = md.check(p, [] , O, dir, 5, tt, to);
+console.log(to);
